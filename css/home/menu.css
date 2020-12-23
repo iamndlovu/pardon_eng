@@ -1,0 +1,43 @@
+.home-menu
+{
+  background: #000;
+  color: aliceblue;
+  border-bottom: 3px solid var(--primary);
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.home-nav
+{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list, .social-links
+{
+  display: flex;
+  list-style: none;
+}
+
+.nav-item, .social-link
+{
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.nav-item:hover, .social-link:hover
+{
+  color: var(--secondary);
+}
+
+.nav-item
+{
+  margin-right: 1rem;
+}
+
+.social-link
+{
+  margin-left: 1rem;
+}
