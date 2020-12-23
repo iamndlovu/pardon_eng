@@ -1,0 +1,29 @@
+@import './menu.css';
+
+#home
+{
+  background: #232323;
+  color: aliceblue;
+  font-size: 2rem;
+  height: calc(100vh - 3rem);
+  width:  100%;
+}
+
+#home p
+{
+  line-height: 3rem;
+}
+
+.cta-btn
+{
+  display: block;
+  border: 2px solid aliceblue;
+  margin-top: 2rem;
+  padding: 1.43rem 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.cta-btn:hover
+{
+  background: var(--primary);
+}
