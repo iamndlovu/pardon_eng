@@ -34,10 +34,24 @@
 
 .nav-item
 {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .social-link
 {
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.logo a
+{
+  width: 2rem;
+  height: 2rem;
+  background: url('../../img/logo\ algerian\ extra-condensed\ aliceblue.png') center no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-out;
+}
+
+.logo a:hover
+{
+  background-image: url('../../img/logo\ algerian\ extra-condensed\ yellow.png');
 }
