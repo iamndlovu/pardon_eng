@@ -35,9 +35,11 @@ a
 .primary
 {
   color: var(--primary);
+  font-weight: inherit;
 }
 
 .secondary
 {
   color: var(--secondary);
+  font-weight: inherit;
 }

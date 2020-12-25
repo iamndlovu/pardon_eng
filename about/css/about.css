@@ -1,0 +1,36 @@
+main
+{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.intro
+{
+  flex: 1;
+  padding: 7rem 10vw;
+}
+
+.page-heading
+{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.bio
+{
+  color: #333;
+  font-weight: 320;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.lead
+{
+  font-weight: 350;
+  color: #444;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
