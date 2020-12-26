@@ -167,3 +167,8 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
+.front-img img
+{
+  width: 70%;
+}
