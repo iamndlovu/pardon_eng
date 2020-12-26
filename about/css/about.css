@@ -77,7 +77,7 @@
 /* front end web developer? */
 .abt-front
 {
-  margin-top: 4.7rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -92,6 +92,15 @@
   padding: 10vw;
 }
 
+.front-heading
+{
+  color: #333;
+  font-weight: 350;
+  font-size: 1.7rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.23rem;
+}
+
 .front-text
 {
   color: #333;
@@ -101,3 +110,25 @@
 }
 
 /* CTA */
+.cta-btn
+{
+  text-transform: capitalize;
+  color: #000;
+  background: var(--secondary);
+  border: 3px solid var(--primary);
+  font-weight: 350;
+  font-size: 1.5rem;
+  padding: 2rem 6rem;
+  transition: all 0.5s ease-out;
+}
+
+.cta-btn:hover
+{
+  color: aliceblue;
+  background: var(--primary);
+  border: 3px solid var(--secondary);
+  font-weight: 350;
+  font-size: 1.5rem;
+  padding: 1rem 6rem;
+  margin: 1rem 0;
+}
