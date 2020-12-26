@@ -13,6 +13,11 @@
   padding: 0;
 }
 
+body
+{
+  background: white;
+}
+
 a
 {
   color: inherit;
@@ -42,4 +47,11 @@ a
 {
   color: var(--secondary);
   font-weight: inherit;
+}
+
+.line
+{
+  background: var(--secondary);
+  height: 3px;
+  width: 100vw;
 }

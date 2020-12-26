@@ -1,13 +1,37 @@
-main
+:root
+{
+  --intro-height: 27rem
+}
+/*intro*/
+.intro
 {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 3rem;
 }
 
-.intro
+.intro div
+{
+  justify-content: flex-end;
+  height: var(--intro-height);
+}
+
+.potrait
 {
   flex: 1;
-  padding: 7rem 10vw;
+  align-items: center;
+}
+
+.potrait img
+{
+  height: var(--intro-height);
+  width: calc(33 * var(--intro-height) / 35);
+}
+
+.intro-text
+{
+  flex: 1;
+  padding: 0 10vw;
 }
 
 .page-heading
@@ -20,6 +44,7 @@ main
 
 .bio
 {
+  justify-content: space-between;
   color: #333;
   font-weight: 320;
   font-size: 1.2rem;
@@ -34,3 +59,45 @@ main
   line-height: 1.75rem;
   margin-bottom: 1.5rem;
 }
+
+.social
+{
+  background: var(--primary);
+  color: #000;
+  margin-top: 1rem;
+}
+
+.social-links
+{
+  justify-content: space-evenly;
+  padding: 7px 0;
+  width: 70%;
+}
+
+/* front end web developer? */
+.abt-front
+{
+  margin-top: 4.7rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.abt-front>div
+{
+  flex: 1;
+}
+
+.right
+{
+  padding: 10vw;
+}
+
+.front-text
+{
+  color: #333;
+  font-weight: 320;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+/* CTA */
