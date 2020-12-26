@@ -1,0 +1,24 @@
+/* intro */
+.intro
+{
+  margin: 3rem 0;
+  padding: 0 2rem;
+}
+
+.page-heading
+{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+
+.intro-text
+{
+  font-weight: 350;
+  color: #444;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
