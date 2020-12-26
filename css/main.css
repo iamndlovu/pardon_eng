@@ -16,6 +16,7 @@
 body
 {
   background: white;
+  overflow-x: hidden;
 }
 
 a
