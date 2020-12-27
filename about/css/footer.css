@@ -35,6 +35,11 @@ footer .social-links
   justify-content: space-evenly;
 }
 
+.social a:hover
+{
+  color: var(--secondary);
+}
+
 .copyright
 {
   grid-column: 1 / -1;

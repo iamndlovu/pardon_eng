@@ -49,6 +49,8 @@
 .menu-nav
 {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 20rem;
   height: 100%;
   background: #333;

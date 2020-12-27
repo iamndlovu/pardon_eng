@@ -46,12 +46,12 @@
 {
   width: 2rem;
   height: 2rem;
-  background: url('../../img/logo\ algerian\ extra-condensed\ aliceblue.png') center no-repeat;
+  background: url('./../../img/logo\ algerian\ extra-condensed\ aliceblue.png') center no-repeat;
   background-size: cover;
   transition: all 0.5s ease-out;
 }
 
 .logo a:hover
 {
-  background-image: url('../../img/logo\ algerian\ extra-condensed\ yellow.png');
+  background-image: url('./../../img/logo\ algerian\ extra-condensed\ yellow.png');
 }
