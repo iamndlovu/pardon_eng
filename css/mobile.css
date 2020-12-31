@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px)
+{
+  /* home header & menu */
+  .nav-item
+  {
+    margin-right: 1rem;
+    font-size: .7rem;
+  }
+
+  .social-link
+  {
+    margin-left: .6rem;
+  }
+
+  .logo a
+    {
+      width: 1rem;
+      height: 1rem;
+    }
+
+  /* home main */
+  main#home
+  {
+    font-size: 1rem;
+  }
+
+  main#home p
+  {
+    line-height: 1.7rem;
+  }
+
+  a.cta-btn
+  {
+    margin-top: 2rem;
+    padding: 0.715rem 0.5rem;
+    transition: all 0.5s ease-out;
+  }
+}
