@@ -24,4 +24,11 @@
     margin-top: 8rem;
     flex: 1;
   }
+
+  .form-message
+  {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 0 1rem;
+  }
 }
