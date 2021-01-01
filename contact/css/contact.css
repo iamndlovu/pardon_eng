@@ -42,6 +42,11 @@
   text-transform: capitalize;
 }
 
+.platform:hover
+{
+  text-decoration: underline;
+}
+
 .tw
 {
   color: rgb(23, 143, 255);
