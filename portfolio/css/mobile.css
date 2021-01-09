@@ -1,3 +1,10 @@
 @import "./../../about/css/menu-footer-mobile.css";
 @media screen and (max-width: 570px) {
+	.intro {
+		padding: 0 10px;
+	}
+
+	section.projects {
+		grid-template-columns: repeat(auto-fit, 300px);
+	}
 }

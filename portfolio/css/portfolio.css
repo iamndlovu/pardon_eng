@@ -32,6 +32,7 @@ main {
 }
 
 .intro-text {
+	text-align: center;
 	color: rgb(203, 213, 221);
 	font-weight: 350;
 	font-size: 1.5rem;
@@ -43,7 +44,7 @@ main {
 .projects {
 	background: #eaeaea;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 319px);
+	grid-template-columns: repeat(auto-fit, 320px);
 	gap: 20px;
 	justify-content: center;
 	padding: 50px 5px;
