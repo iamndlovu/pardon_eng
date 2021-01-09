@@ -5,12 +5,12 @@ body {
 
 /* menu button */
 div.btn-line {
-	background: aliceblue;
+	background: var(--primary);
 }
 
 div.btn-line.close:nth-child(1),
 div.btn-line.close:nth-child(3) {
-	background: aliceblue;
+	background: var(--primary);
 }
 
 main {
