@@ -1,5 +1,3 @@
-@import './../../about/css/menu-footer-mobile.css';
-@media  screen and (max-width:500px)
-{
-  
+@import "./../../about/css/menu-footer-mobile.css";
+@media screen and (max-width: 570px) {
 }

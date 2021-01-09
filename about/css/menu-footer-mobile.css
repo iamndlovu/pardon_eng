@@ -31,16 +31,18 @@
    width: 100%;
    overflow-x: hidden;
  }
- 
- .logo
+ /*
+ u.logo
  {
    grid-column: 2 / 25;
    grid-row: 2 / 7;
  }
-
+ */
+/*
  footer .social
  {
    grid-row: 2 / 7;
    grid-column: 74 / 98;
  }
+ */
 }
