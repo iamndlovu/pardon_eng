@@ -128,7 +128,7 @@
 .fun-facts {
 	display: flex;
 	margin: 3rem 0;
-	padding: 0 2rem;
+	padding: 0 10vw;
 	min-height: 30rem;
 }
 
@@ -144,6 +144,10 @@
 	line-height: 2.5rem;
 	width: 100%;
 	margin-bottom: 1.23rem;
+}
+
+.facts {
+	list-style: none;
 }
 
 .fact {
