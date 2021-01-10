@@ -157,6 +157,10 @@
 	margin-bottom: 1rem;
 }
 
+.facts-img {
+	transform: rotate(27deg);
+}
+
 .facts-img img {
-	width: 40%;
+	width: 100%;
 }
