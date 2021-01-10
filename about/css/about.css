@@ -1,174 +1,158 @@
-:root
-{
-  --intro-height: 27rem
+:root {
+	--intro-height: 27rem;
 }
 
 /*intro*/
-.intro
-{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 3rem;
+.intro {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: 3rem;
 }
 
-.intro div
-{
-  justify-content: flex-end;
-  height: var(--intro-height);
+.intro div {
+	justify-content: flex-end;
+	height: var(--intro-height);
 }
 
-.potrait
-{
-  flex: 1;
-  align-items: center;
+.potrait {
+	flex: 1;
+	align-items: center;
 }
 
-.potrait img
-{
-  height: var(--intro-height);
-  width: calc(33 * var(--intro-height) / 35);
+.potrait img {
+	height: var(--intro-height);
+	width: calc(33 * var(--intro-height) / 35);
 }
 
-.intro-text
-{
-  flex: 1;
-  padding: 0 10vw;
+.intro-text {
+	flex: 1;
+	padding: 0 10vw;
 }
 
-.page-heading
-{
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 3rem;
+.page-heading {
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 3rem;
+	margin-bottom: 3rem;
 }
 
-.bio
-{
-  justify-content: space-between;
-  color: #333;
-  font-weight: 320;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+.bio {
+	justify-content: space-between;
+	color: #333;
+	font-weight: 320;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
 }
 
-.lead
-{
-  font-weight: 350;
-  color: #444;
-  font-size: 1.4rem;
-  line-height: 1.75rem;
-  margin-bottom: 1.5rem;
+.lead {
+	font-weight: 350;
+	color: #444;
+	font-size: 1.4rem;
+	line-height: 1.75rem;
+	margin-bottom: 1.5rem;
 }
 
-.intro .social
-{
-  background: var(--primary);
-  color: #000;
-  margin-top: 1rem;
+.intro .social {
+	color: #000;
+	margin-top: 1rem;
 }
 
-.intro .social-links
-{
-  justify-content: space-evenly;
-  padding: 7px 0;
-  width: 70%;
+.intro .social-links {
+	justify-content: space-between;
+	padding: 7px 0;
+	width: 100%;
+}
+
+.intro .social .social-link a:hover {
+	color: var(--primary);
 }
 
 /* front end web developer? */
-.abt-front
-{
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row-reverse;
+.abt-front {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row-reverse;
+	background: #f0f0f0;
+	color: black;
 }
 
-.abt-front>div
-{
-  flex: 1;
+.abt-front > div {
+	flex: 1;
 }
 
-.right
-{
-  padding: 10vw;
+.right {
+	padding: 10vw;
 }
 
-.front-heading
-{
-  text-transform: capitalize;
-  color: #333;
-  font-weight: 350;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin-bottom: 1.23rem;
+.front-heading {
+	text-transform: capitalize;
+	color: #333;
+	font-weight: 350;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	margin-bottom: 1.23rem;
 }
 
-.front-text
-{
-  color: #333;
-  font-weight: 320;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+.front-text {
+	color: #333;
+	font-weight: 320;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
 }
 
 /* CTA */
-.cta-btn
-{
-  text-transform: capitalize;
-  color: #000;
-  background: var(--secondary);
-  border: 3px solid transparent;
-  font-weight: 350;
-  font-size: 1.5rem;
-  padding: 2rem 6rem;
-  transition: all 0.5s ease-out;
+.cta {
+	background: #f0f0f0;
+	margin-top: -4rem;
+	padding-bottom: 2rem;
 }
 
-.cta-btn:hover
-{
-  color: aliceblue;
-  background: var(--primary);
-  border: 2px solid #333;
-  font-weight: 350;
-  font-size: 1.5rem;
-  padding: 1rem 6rem;
-  margin: 1rem 0;
+.cta-btn {
+	text-transform: capitalize;
+	color: white;
+	background: var(--primary);
+	border: 3px solid transparent;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+	box-shadow: 6px 6px 6px #333;
+	transition: all 0.5s ease-out;
+}
+
+.cta-btn:hover {
+	box-shadow: none;
 }
 
 /* fun facts */
-.fun-facts
-{
-  display: flex;
-  margin: 3rem 0;
-  padding: 0 2rem;
-  min-height: 30rem;
+.fun-facts {
+	display: flex;
+	margin: 3rem 0;
+	padding: 0 2rem;
+	min-height: 30rem;
 }
 
-.fun-facts>div
-{
-  flex: 1;
+.fun-facts > div {
+	flex: 1;
 }
 
-.facts-heading
-{
-  text-transform: capitalize;
-  color: #333;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  width: 100%;
-  margin-bottom: 1.23rem;
+.facts-heading {
+	text-transform: capitalize;
+	color: #333;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	width: 100%;
+	margin-bottom: 1.23rem;
 }
 
-.fact
-{
-  color: #333;
-  font-weight: normal;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.fact {
+	color: #333;
+	font-weight: normal;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 }
 
-.facts-img img
-{
-  width: 40%;
+.facts-img img {
+	width: 40%;
 }
