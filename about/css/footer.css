@@ -22,7 +22,7 @@ footer {
 }
 
 footer .social {
-	grid-column: 88 / 98;
+	grid-column: 78 / 98;
 	grid-row: 2 / 6;
 }
 
