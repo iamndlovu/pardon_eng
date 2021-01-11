@@ -158,7 +158,7 @@
 }
 
 .facts-img {
-	transform: rotate(27deg);
+	transform: rotate(27deg) translate(10px, 0);
 }
 
 .facts-img img {
