@@ -1,26 +1,22 @@
 .intro {
+	background-color: #f0f0f0;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: row-reverse;
+	padding: var(--left-padding);
 }
 
 .left {
 	background: url("./../img/phone.png") no-repeat center;
 	background-size: cover;
 	width: 30vw;
-	height: calc(336 * 30vw / 280);
-	margin-top: 4rem;
+	height: calc(200 * 30vw / 280);
 }
 
 .right {
 	justify-content: flex-start;
 	width: 40vw;
 	margin-right: 10vw;
-	padding-left: 5rem;
-}
-
-.container {
-	margin-top: 4.4rem;
 }
 
 .page-heading {
@@ -51,7 +47,7 @@
 
 /* contact form */
 .contact-form {
-	padding-left: 5rem;
+	padding: 3.2rem var(--left-padding);
 }
 
 .form-message {
@@ -67,8 +63,13 @@ form {
 	margin-bottom: 2rem;
 }
 
+label {
+	position: absolute;
+	transform: translate(-1000%, -1000%);
+}
+
 .form-input {
-	width: 100%;
+	width: 45%;
 	padding: 0.375rem 0.75rem;
 	font-size: 1rem;
 	line-height: 1.5;
