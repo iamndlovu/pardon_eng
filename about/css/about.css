@@ -6,6 +6,7 @@
 .intro {
 	display: flex;
 	flex-direction: row-reverse;
+	padding: 0 var(--left-padding);
 	margin-bottom: 3rem;
 }
 
@@ -26,7 +27,6 @@
 
 .intro-text {
 	flex: 1;
-	padding: 0 5rem;
 }
 
 .page-heading {
@@ -70,6 +70,7 @@
 /* front end web developer? */
 .abt-front {
 	margin-top: 2rem;
+	padding: var(--left-padding);
 	display: flex;
 	flex-direction: row-reverse;
 	background: #f0f0f0;
@@ -80,14 +81,9 @@
 	flex: 1;
 }
 
-.right {
-	padding: 5rem;
-}
-
 .left {
 	display: flex;
 	align-items: center;
-	padding-left: 5rem;
 }
 
 .front-heading {
@@ -134,7 +130,7 @@
 .fun-facts {
 	display: flex;
 	margin: 3rem 0;
-	padding: 0 5rem;
+	padding: 0 var(--left-padding);
 	min-height: 30rem;
 }
 

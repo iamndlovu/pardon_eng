@@ -20,7 +20,7 @@ main {
 /* intro */
 .intro {
 	margin: 3rem 0;
-	padding: 0 5rem;
+	padding: 0 var(--left-padding);
 }
 
 .page-heading {
@@ -44,7 +44,7 @@ main {
 	grid-template-columns: repeat(auto-fit, 320px);
 	gap: 20px;
 	justify-content: center;
-	padding: 50px 5rem;
+	padding: 50px var(--left-padding);
 }
 
 .project {

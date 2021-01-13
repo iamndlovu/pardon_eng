@@ -3,13 +3,13 @@ footer {
 	color: aliceblue;
 	border-bottom: 3px solid var(--primary);
 	height: 10rem;
-	padding: 0 4rem;
+	padding: 0 calc(var(--left-padding) - 1rem);
 	display: grid;
 	grid-template: repeat(10, 1rem) / repeat(100, 1vw);
 }
 
 .logo {
-	grid-column: 2 / 7;
+	grid-column: 1 / 6;
 	grid-row: 2 / 6;
 	background: url("../../img/logo\ algerian\ extra-condensed\ aliceblue.png")
 		center no-repeat;
