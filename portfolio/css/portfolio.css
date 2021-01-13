@@ -20,7 +20,7 @@ main {
 /* intro */
 .intro {
 	margin: 3rem 0;
-	padding: 0 2rem;
+	padding: 0 5rem;
 }
 
 .page-heading {
@@ -32,7 +32,6 @@ main {
 }
 
 .intro-text {
-	text-align: center;
 	font-weight: 350;
 	font-size: 1.2rem;
 	line-height: 2rem;
@@ -45,7 +44,7 @@ main {
 	grid-template-columns: repeat(auto-fit, 320px);
 	gap: 20px;
 	justify-content: center;
-	padding: 50px 5px;
+	padding: 50px 5rem;
 }
 
 .project {

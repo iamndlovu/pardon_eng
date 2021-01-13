@@ -3,6 +3,7 @@ footer {
 	color: aliceblue;
 	border-bottom: 3px solid var(--primary);
 	height: 10rem;
+	padding: 0 4rem;
 	display: grid;
 	grid-template: repeat(10, 1rem) / repeat(100, 1vw);
 }

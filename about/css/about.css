@@ -26,7 +26,7 @@
 
 .intro-text {
 	flex: 1;
-	padding: 0 10vw;
+	padding: 0 5rem;
 }
 
 .page-heading {
@@ -81,7 +81,13 @@
 }
 
 .right {
-	padding: 10vw;
+	padding: 5rem;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+	padding-left: 5rem;
 }
 
 .front-heading {
@@ -128,7 +134,7 @@
 .fun-facts {
 	display: flex;
 	margin: 3rem 0;
-	padding: 0 10vw;
+	padding: 0 5rem;
 	min-height: 30rem;
 }
 
