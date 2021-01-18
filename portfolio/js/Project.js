@@ -25,18 +25,33 @@ export class Project
     return this.hash;
   }
 
+  get liveLink() {
+    return this.live;
+  }
+
+  get githubLink() {
+    return this.github;
+  }
+
+  //display project preview card
   showCard(parent) {
     const card = this.buildCard();
     this.attach(parent, card);
   }
 
-  showMore() {
-    //TODO: buildMore()
-    //TODO: attachToDOM()
-    //TODO: handleClose()
-    alert('show more');
+  //show more project details
+  showMore(project) {
+    const hiddenItems = [document.querySelector('.menu-btn'), document.querySelector('section.projects'), document.querySelector('.intro')];
+    const moreDetails = project.buildMore(hiddenItems);
+    project.attach(document.querySelector('main'), moreDetails)
+
+    hiddenItems.forEach(item => {
+      item.classList.add('hidden-items');
+    });
+    moreDetails.classList.remove('hidden-items');
   }
-  //TODO: buildCard()
+
+  // build project preview card
   buildCard() {
     const container = document.createElement('div');
     const projectCard = document.createElement('div');
@@ -61,7 +76,7 @@ export class Project
 
     const moreButton = document.createElement('a');
     moreButton.textContent = 'Read more'
-    moreButton.addEventListener('click', this.showMore);
+    moreButton.addEventListener('click', () => this.showMore(this));
 
     projectPreview.appendChild(projectTitle);
     projectPreview.appendChild(projectIntro);
@@ -72,8 +87,93 @@ export class Project
 
     return container;
   }
-  //TODO: attach to container
+
+  // append child to parent container
   attach(parent, element) {
     parent.appendChild(element);
+  }
+
+  remove(parent, element) {
+    parent.removeChild(element);
+  }
+
+  // build elements with more details about project
+  buildMore(hiddenItems) {
+    const projectMore = document.createElement('article');
+    projectMore.className = 'project-more hidden-items';
+
+    const closeButton = document.createElement('div');
+    closeButton.className = 'close-btn';
+    closeButton.innerHTML = '&times';
+    closeButton.addEventListener('click', () => this.hideMore(hiddenItems));
+
+    const moreContainer = document.createElement('section');
+    moreContainer.className = 'more-container';
+
+    const projectImageContainer = document.createElement('div');
+    projectImageContainer.className = 'project-more-image more-right';
+
+    const projectImage = document.createElement('img');
+    projectImage.src = this.getHash;
+    projectImage.alt = `${this.getTitle} project image`;
+
+    const left = document.createElement('div');
+    left.className = 'more-left';
+
+    const projectTitle = document.createElement('h1');
+    projectTitle.className = 'project-more-title';
+    projectTitle.textContent = this.getTitle;
+    
+    const projectDescription = document.createElement('p');
+    projectDescription.className = 'project-more-description';
+    projectDescription.textContent = this.getDescription;
+
+    const projectCTA = document.createElement('section');
+    projectCTA.className = 'project-more-cta';
+
+    const liveLink = document.createElement('a');
+    liveLink.href = this.liveLink;
+
+    const liveText = document.createTextNode('live');
+
+    const liveIcon = document.createElement('i');
+    liveIcon.className = 'fas fa-eye';
+
+    const githubLink = document.createElement('a');
+    githubLink.href = this.githubLink;
+
+    const githubText = document.createTextNode('Github');
+
+    const githubIcon = document.createElement('i');
+    githubIcon.className = 'fab fa-github';
+
+    projectImageContainer.appendChild(projectImage);
+    githubLink.appendChild(githubIcon);
+    githubLink.appendChild(githubText);
+    liveLink.appendChild(liveIcon);
+    liveLink.appendChild(liveText);
+    projectCTA.appendChild(liveLink);
+    projectCTA.appendChild(githubLink);
+    left.appendChild(projectTitle);
+    left.appendChild(projectDescription);
+    left.appendChild(projectCTA);
+    moreContainer.appendChild(left);
+    moreContainer.appendChild(projectImageContainer);
+    projectMore.appendChild(closeButton);
+    projectMore.appendChild(moreContainer);
+
+    return projectMore;
+  }
+
+  hideMore(toBeShown) {
+    const moreDetails = document.querySelector('.project-more');
+
+    toBeShown.forEach(item => {
+      item.classList.remove('hidden-items')
+    });
+
+    moreDetails.classList.add('hidden-items');
+
+    setTimeout(() => {this.remove(document.querySelector('main'), moreDetails)}, 1000);
   }
 };
