@@ -3,14 +3,18 @@ footer {
 	color: aliceblue;
 	border-bottom: 3px solid var(--primary);
 	height: 10rem;
-	padding: 0 calc(var(--left-padding) - 1rem);
-	display: grid;
-	grid-template: repeat(10, 1rem) / repeat(100, 1vw);
+	width: 100vw;
+	padding: 20px calc(var(--left-padding) - 1rem);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .logo {
-	grid-column: 1 / 6;
-	grid-row: 2 / 6;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	height: 5rem;
+	width: 5rem;
 	background: url("../../img/logo\ algerian\ extra-condensed\ aliceblue.png")
 		center no-repeat;
 	background-size: cover;
@@ -23,13 +27,17 @@ footer {
 }
 
 footer .social {
-	grid-column: 78 / 98;
-	grid-row: 2 / 6;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
 }
 
 footer .social-links {
-	width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-between;
+}
+
+.social-link {
+	margin-left: 1.3rem;
 }
 
 .social a:hover {
@@ -37,7 +45,6 @@ footer .social-links {
 }
 
 .copyright {
-	grid-column: 1 / -1;
-	grid-row: 8 / -1;
+	width: 100%;
 	text-align: center;
 }
