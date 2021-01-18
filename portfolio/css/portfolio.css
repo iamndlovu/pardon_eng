@@ -21,6 +21,7 @@ main {
 .intro {
 	margin: 3rem 0;
 	padding: 0 var(--left-padding);
+	transition: all 0.5s ease;
 }
 
 .page-heading {
@@ -45,6 +46,7 @@ main {
 	gap: 20px;
 	justify-content: center;
 	padding: 50px var(--left-padding);
+	transition: all 0.5s ease;
 }
 
 .project {
@@ -81,4 +83,108 @@ main {
 	color: var(--primary);
 	font-size: 20px;
 	cursor: pointer;
+}
+
+/* More project details */
+.project-more {
+	padding: var(--left-padding);
+	width: 100%;
+	color: #333;
+	position: relative;
+}
+
+.more-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.more-right {
+	grid-column: 2 / -1;
+}
+
+.project-more-image img {
+	max-height: 45rem;
+}
+
+.more-left {
+	grid-column: 1 / 2;
+	background-color: white;
+	grid-row-start: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.project-more-title {
+	font-weight: 600;
+	font-size: 2.5rem;
+	margin-bottom: 2.1rem;
+}
+
+.project-more-description {
+	font-size: 1.17rem;
+	line-height: 1.6;
+	margin-bottom: 2.1rem;
+}
+
+.project-more-cta {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.project-more-cta a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	border: 2px solid #aaa;
+	border-radius: 17px;
+	width: 9rem;
+	height: 3rem;
+	transition: box-shadow 0.5s ease;
+}
+
+.project-more-cta a:hover {
+	box-shadow: 3px 3px 6px #777;
+}
+
+.project-more-cta a:first-child {
+	color: red;
+	margin-right: 2rem;
+}
+
+.project-more-cta a i {
+	margin-right: 7px;
+}
+
+.close-btn {
+	cursor: pointer;
+	background: red;
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: 500;
+	font-size: 22px;
+	width: 25px;
+	height: 30px;
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	z-index: 3;
+	transition: all 0.5s ease;
+}
+
+.close-btn:hover {
+	background: rgb(228, 9, 9);
+}
+
+.hidden-items {
+	position: fixed;
+	z-index: -10;
+	opacity: 0;
+	transition: all 0.5s ease;
 }
