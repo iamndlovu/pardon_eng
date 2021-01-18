@@ -23,17 +23,18 @@
 	/* footer */
 	footer {
 		width: 100%;
-		padding-top: 4px;
+		padding-top: 17px;
+		padding-left: var(--left-padding);
 		overflow-x: hidden;
 	}
 
 	a.logo {
-		grid-column: 2 / 25;
-		grid-row: 1 / 7;
+		height: 2.5rem;
+		width: 2.5rem;
 	}
 
 	footer .social {
-		grid-row: 1 / 7;
-		grid-column: 60 / 98;
+		width: calc(100% - 2.5rem);
+		padding-right: 1rem;
 	}
 }
