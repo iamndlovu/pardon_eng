@@ -1,137 +1,97 @@
-@import './menu-footer-mobile.css';
-@media screen and (max-width: 500px)
-{
-  /* main */
-  main
-  {
-    width: 100vw;
-    overflow-x: hidden;
-  }
+@import "./menu-footer-mobile.css";
+@media screen and (max-width: 500px) {
+	/* main */
+	main {
+		width: 100vw;
+		overflow-x: hidden;
+	}
 
-  main section.intro
-  {
-    flex-direction: column-reverse;
-    margin: 4rem 0 1rem 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
+	main section.intro {
+		flex-direction: column-reverse;
+		margin: 4rem 0 1rem 0;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
 
-  div.intro-text
-  {
-    flex: 1;
-    padding: 0 6%;
-  }
+	div.intro-text {
+		flex: 1;
+		padding: 0 6%;
+	}
 
-  .page-heading
-  {
-    font-size: 2.3rem;
-    margin-bottom: 1.5rem;
-  }
+	.page-heading {
+		font-size: 2.3rem;
+		margin-bottom: 1.5rem;
+	}
 
-  .bio
-  {
-    justify-content: flex-start;
-    font-size: 1.07rem;
-  }
+	.bio {
+		justify-content: flex-start;
+		font-size: 1.07rem;
+	}
 
-  .lead
-  {
-    font-size: 1.2rem;
-  }
+	.lead {
+		font-size: 1.2rem;
+	}
 
-  .potrait
-  {
-    max-height: 15rem;
-  }
+	.potrait {
+		max-height: 15rem;
+	}
 
-  .potrait img
-  {
-    height: 15rem;
-    width: calc(33 * 15rem / 35);
-  }
+	.potrait img {
+		height: 15rem;
+		width: calc(33 * 15rem / 35);
+	}
 
-  div.line
-  {
-    display: none;
-  }
+	div.line {
+		display: none;
+	}
 
+	.abt-front {
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+	}
 
+	.right {
+		padding: 6%;
+		width: 100%;
+	}
 
-  .abt-front
-  {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .right
-  {
-    padding: 6%;
-    width: 100%;
-  }
+	.left {
+		display: none;
+	}
 
-  .left
-  {
-    max-width: 90vw;
-    overflow: hidden;
-  }
+	.front-heading,
+	h1.facts-heading {
+		font-size: 1.52rem;
+		line-height: 2.07rem;
+		margin-bottom: 1.12rem;
+	}
 
-  .front-img
-  {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	.front-text,
+	.fact {
+		font-size: 1.12rem;
+	}
 
-  .front-img img
-  {
-    width: 100%;
-  }
+	.cta-btn {
+		font-size: 1.5rem;
+		padding: 1rem 3rem;
+	}
 
-  .front-heading, h1.facts-heading
-  {
-    font-size: 1.52rem;
-    line-height: 2.07rem;
-    margin-bottom: 1.12rem;
-  }
+	.cta-btn:hover {
+		font-size: 1.5rem;
+		padding: 0.5rem 1.5rem;
+		margin: 0.5rem 0;
+	}
 
-  .front-text, .fact
-  {
-    font-size: 1.12rem;
-  }
+	.fun-facts {
+		margin: 2rem 0;
+		padding: 0 2rem;
+		height: 100%;
+		flex-direction: column;
+	}
 
-
-
-
-
-  .cta-btn
-  {
-    font-size: 1.5rem;
-    padding: 1rem 3rem;
-  }
-
-  .cta-btn:hover
-  {
-    font-size: 1.5rem;
-    padding: 0.5rem 1.5rem;
-    margin: 0.5rem 0;
-  }
-
-
-
-
-  .fun-facts
-  {
-    margin: 2rem 0;
-    padding: 0 2rem;
-    height: 100%;
-    flex-direction: column-reverse;
-  }
-
-  .facts-img
-  {
-    display: none;
-  }
+	.facts-img {
+		margin-top: 2rem;
+	}
 }
