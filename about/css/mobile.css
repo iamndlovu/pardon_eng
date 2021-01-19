@@ -1,6 +1,5 @@
 @import "./menu-footer-mobile.css";
 @media screen and (max-width: 500px) {
-	/* main */
 	main {
 		width: 100vw;
 		overflow-x: hidden;
@@ -104,5 +103,11 @@
 		position: absolute;
 		z-index: -9;
 		height: 10rem;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	main {
+		padding-top: 3.17rem;
 	}
 }
