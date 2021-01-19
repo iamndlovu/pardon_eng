@@ -7,4 +7,47 @@
 	section.projects {
 		grid-template-columns: repeat(auto-fit, 300px);
 	}
+	/* More project details */
+	.project-more {
+		padding: var(--left-padding);
+		width: 100%;
+		color: #333;
+		position: relative;
+	}
+
+	.more-container {
+		width: calc(100vw - 2rem);
+		display: grid;
+		grid-template-columns: repeat(
+			1,
+			calc(100vw - var(--left-padding) - var(--left-padding))
+		);
+		gap: 10px;
+		position: relative;
+	}
+
+	.more-right {
+		grid-row-start: 1;
+		grid-column: 1 / -1;
+		margin-top: calc(2.5rem + var(--left-padding));
+	}
+
+	.more-right img {
+		width: 100%;
+	}
+
+	.project-more-image img {
+		max-width: 100%;
+	}
+
+	.more-left {
+		grid-row-start: 2;
+		padding: 0;
+	}
+
+	.project-more-title {
+		position: absolute;
+		top: var(--left-padding);
+		left: calc(var(--left-padding) + 1.6rem);
+	}
 }
