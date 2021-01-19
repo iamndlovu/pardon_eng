@@ -4,6 +4,10 @@
 		padding: 0 10px;
 	}
 
+	.page-heading {
+		font-size: 2.6rem;
+	}
+
 	section.projects {
 		grid-template-columns: repeat(auto-fit, 300px);
 	}
