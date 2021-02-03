@@ -38,11 +38,11 @@
 }
 
 .tw {
-	color: rgb(23, 143, 255);
+	color: rgb(27, 149, 224);
 }
 
-.wa {
-	color: rgb(8, 197, 49);
+.tg {
+	color: #5682a3;
 }
 
 /* contact form */
@@ -56,8 +56,16 @@
 }
 
 form {
-	width: 90%;
-	padding: 2.7rem 0;
+	width: 59%;
+	padding: 2.7rem;
+	margin-top: 2.7rem;
+	background: #333;
+}
+
+form div.form-group.hidden {
+	position: absolute;
+	z-index: -5;
+	opacity: 0;
 }
 
 .form-group {
@@ -70,7 +78,7 @@ label {
 }
 
 .form-input {
-	width: 45%;
+	width: 100%;
 	padding: 0.375rem 0.75rem;
 	font-size: 1rem;
 	line-height: 1.5;

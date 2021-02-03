@@ -19,6 +19,13 @@
 		flex: 1;
 	}
 
+	form {
+		width: 100%;
+		margin-right: 0;
+		padding: 1rem;
+		margin-top: 1rem;
+	}
+
 	.form-message {
 		font-size: 1.2rem;
 		line-height: 1.7rem;
@@ -38,7 +45,8 @@
 		margin-top: auto;
 	}
 
-	.form-input {
-		width: 83%;
+	form {
+		width: 80%;
 	}
-}
+
+	.form-in                              
