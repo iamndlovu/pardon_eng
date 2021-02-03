@@ -124,14 +124,15 @@ export class Project
     projectTitle.className = 'project-more-title';
     projectTitle.textContent = this.getTitle;
     
-    const projectDescription = document.createElement('p');
+    const projectDescription = document.createElement('div');
     projectDescription.className = 'project-more-description';
-    projectDescription.textContent = this.getDescription;
+    projectDescription.innerHTML = this.getDescription;
 
     const projectCTA = document.createElement('section');
     projectCTA.className = 'project-more-cta';
 
     const liveLink = document.createElement('a');
+    liveLink.target = '_blank';
     liveLink.href = this.liveLink;
 
     const liveText = document.createTextNode('live');
@@ -140,6 +141,7 @@ export class Project
     liveIcon.className = 'fas fa-eye';
 
     const githubLink = document.createElement('a');
+    githubLink.target = '_blank';
     githubLink.href = this.githubLink;
 
     const githubText = document.createTextNode('Github');
