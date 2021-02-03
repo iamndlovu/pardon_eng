@@ -35,7 +35,10 @@
 		width: 100%;
 	}
 
-	html > body > main > section.contact-form > form > div > div.g-recaptcha > div {
+	/*recaptcha*/
+	html > body > main > section.contact-form > form > div > div.g-recaptcha > div,
+	html > body > main > section.contact-form > form > div > div.g-recaptcha > div > div,
+	html > body > main > section.contact-form > form > div > div.g-recaptcha > div > div > iframe {
 		max-width: 100%
 	}
 }
