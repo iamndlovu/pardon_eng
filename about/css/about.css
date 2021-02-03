@@ -166,3 +166,8 @@
 .facts-img img {
 	width: 100%;
 }
+
+.fact a {
+	text-decoration: underline;
+	font-weight: 400;
+}
