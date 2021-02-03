@@ -47,6 +47,12 @@
 
 	form {
 		width: 80%;
+		padding: 1.45rem;
+		margin-top: 1.45rem;
 	}
 
-	.form-in                              
+	.form-input {
+		width: 100%;
+	}
+
+}                            

@@ -68,7 +68,8 @@ form div.form-group.hidden {
 	opacity: 0;
 }
 
-.form-group {
+.form-group,
+form > div {
 	margin-bottom: 2rem;
 }
 
