@@ -53,5 +53,6 @@
 		position: absolute;
 		top: var(--left-padding);
 		left: calc(var(--left-padding) + 1.6rem);
+		font-size: 1.2rem;
 	}
 }
