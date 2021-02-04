@@ -63,6 +63,10 @@
 	width: 100%;
 }
 
+.intro .social .social-link {
+	margin: 0;
+}
+
 .intro .social .social-link a:hover {
 	color: var(--primary);
 }
