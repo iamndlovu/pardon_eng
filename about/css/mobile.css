@@ -32,6 +32,10 @@
 		font-size: 1.2rem;
 	}
 
+	main section.intro .bio .social {
+		margin: 1rem 0;
+	}
+
 	.potrait {
 		max-height: 15rem;
 	}
