@@ -133,6 +133,36 @@ main {
 	margin-bottom: 2.1rem;
 }
 
+.project-more-description .languages {
+	margin-top: 2.1rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.languages .language {
+	margin-right: 3.76rem;
+}
+
+.languages .language:last-child {
+	margin-right: 0;
+}
+
+.languages .language.fa-html5 {
+	color: #e34c26;
+}
+
+.languages .language.fa-css3 {
+	color: #264de4;
+}
+
+.languages .language.fa-js {
+	color: #f0db4f;
+}
+
+.languages .language.fa-react {
+	color: #61dbfb;
+}
+
 .project-more-cta {
 	width: 100%;
 	display: flex;
