@@ -1,12 +1,13 @@
 export class Project
 {
-  constructor(title, intro, description, hash, live, github) {
+  constructor(title, intro, description, hash, live, github, languages) {
     this.title = title;
     this.intro = intro;
     this.description = description;
     this.hash = hash;
     this.live = live;
     this.github = github;
+    this.languages = languages;
   }
 
   get getTitle() {
@@ -31,6 +32,10 @@ export class Project
 
   get githubLink() {
     return this.github;
+  }
+
+  get getLanguages() {
+    return this.languages;
   }
 
   //display project preview card
@@ -149,6 +154,14 @@ export class Project
     const githubIcon = document.createElement('i');
     githubIcon.className = 'fab fa-github';
 
+    const languagesContainer = document.createElement('div');
+    languagesContainer.className = 'languages';
+    this.getLanguages.forEach(language => {
+      const languageCont = document.createElement('i');
+      languageCont.className = `language fab fa-${language} fa-2x`;
+      languagesContainer.appendChild(languageCont);
+    });
+
     projectImageContainer.appendChild(projectImage);
     githubLink.appendChild(githubIcon);
     githubLink.appendChild(githubText);
@@ -156,6 +169,7 @@ export class Project
     liveLink.appendChild(liveText);
     projectCTA.appendChild(liveLink);
     projectCTA.appendChild(githubLink);
+    projectDescription.appendChild(languagesContainer);
     left.appendChild(projectTitle);
     left.appendChild(projectDescription);
     left.appendChild(projectCTA);
