@@ -1,5 +1,5 @@
 @import "./menu-footer-mobile.css";
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
 	main {
 		width: 100vw;
 		overflow-x: hidden;

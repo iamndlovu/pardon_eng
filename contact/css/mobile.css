@@ -1,4 +1,11 @@
 @import "./../../about/css/menu-footer-mobile.css";
+@media screen and (max-width: 750px) {
+	.intro .page-heading {
+		font-size: 2.1rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	section.intro {
 		margin-top: 2.3rem;
@@ -36,10 +43,34 @@
 	}
 
 	/*recaptcha*/
-	html > body > main > section.contact-form > form > div > div.g-recaptcha > div,
-	html > body > main > section.contact-form > form > div > div.g-recaptcha > div > div,
-	html > body > main > section.contact-form > form > div > div.g-recaptcha > div > div > iframe {
-		max-width: 100%
+	html
+		> body
+		> main
+		> section.contact-form
+		> form
+		> div
+		> div.g-recaptcha
+		> div,
+	html
+		> body
+		> main
+		> section.contact-form
+		> form
+		> div
+		> div.g-recaptcha
+		> div
+		> div,
+	html
+		> body
+		> main
+		> section.contact-form
+		> form
+		> div
+		> div.g-recaptcha
+		> div
+		> div
+		> iframe {
+		max-width: 100%;
 	}
 }
 
@@ -61,5 +92,4 @@
 	.form-input {
 		width: 100%;
 	}
-
-}                            
+}
