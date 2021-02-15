@@ -60,6 +60,7 @@ form {
 	padding: 2.7rem;
 	margin-top: 2.7rem;
 	background: #333;
+	border-radius: 9px;
 }
 
 form div.form-group.hidden {
