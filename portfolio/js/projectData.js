@@ -1,16 +1,14 @@
 import { Project } from './Project.js'; // Project class
 
-//TODO: create array of projects
-
-//test projects
-const emmanuel = new Project(
-  'Emmanuel Moyo',
-  'Website built for an author to showcase his works of literature.',
-  '<p>This is a platform  to showcase an author\'s novels and short stories, and to provide links to online stores where the books are sold. Books are categorized by language in the \'Books\' page.</p><p>Built using only HTML, CSS and Vanilla JavaScript.</p>',
-  './img/emmanuel-resize.png',
-  'https://emmanuel-moyo.netlify.app',
-  'https://github.com/iamndlovu/Emmanuel_Moyo',
-  ['html5', 'css3', 'js']
+//projects
+const quiz = new Project(
+  'Hogwart Trivia',
+  'A quiz app based on J.K. Rowling\'s Harry Potter Series.',
+  '<p>A quiz app built using React.js.</p><p>The high score is stored in local storage with all the other stats stored in the top level component state. When the quiz is completed a new component showing how the player perfomed and a restart button is rendered</p>',
+  './img/trivia-mobile-black.png',
+  'https://hogwartstrivia.netlify.app/',
+  'https://github.com/iamndlovu/Hogwarts_Trivia',
+  ['css3', 'js', 'react']
 );
 
 const todoApp = new Project (
@@ -35,7 +33,7 @@ const surveyLP = new Project (
 
 const portfolio = new Project (
   'Pardon Ndlovu',
-  'My web-based web developer portfolio website',
+  'My web developer portfolio website',
   'Well, there\'s not much i can say here. Its the website you are currently viewing!',
   './img/portfolio-resize.png',
   'https://bit.ly/pndlovu',
@@ -45,7 +43,7 @@ const portfolio = new Project (
 
 export let projects = [];
 
-projects.push(emmanuel);
+projects.push(quiz);
 projects.push(todoApp);
 projects.push(surveyLP);
 projects.push(portfolio);

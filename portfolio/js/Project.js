@@ -109,7 +109,7 @@ export class Project
 
     const closeButton = document.createElement('div');
     closeButton.className = 'close-btn';
-    closeButton.innerHTML = '&times';
+    closeButton.innerHTML = 'x';
     closeButton.addEventListener('click', () => this.hideMore(hiddenItems));
 
     const moreContainer = document.createElement('section');
