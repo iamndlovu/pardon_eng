@@ -44,16 +44,38 @@ const portfolio = new Project(
 const blog = new Project(
 	'Company Website',
 	'Responsive company website with blog',
-	'<p>This is a mock website for a company build with React.js</p><p>The development of this project followed the Agile software development life cycle. The gesign was done using GIMP before the app could be implemented using React.</p><p>SASS, a CSS pre-processor, was used to style the entire app. To avoid styles for different components overlapping, CSS modules were employed.</p>',
+	'<p>This is a mock website for a company build with React.js</p><p>The development of this project followed the Agile software development life cycle. The gesign was done using GIMP before the app could be implemented using React.</p><p>Sass, a CSS pre-processor, was used to style the entire app. To avoid styles for different components overlapping, CSS modules were employed.</p>',
 	'./img/blog.png',
 	'https://admiring-villani-f2a854.netlify.app/',
 	'https://github.com/iamndlovu/excomag_client',
-	['react', 'css3', 'js']
+	['react', 'js', 'sass', 'css3']
+);
+
+const db = new Project(
+	'Diamond Berry',
+	'Business development company static website',
+	"<p>Basic company website built using only HTML, CSS and JavaScript. The purpose of the site is to showcase the services provided by the company and provide a way for the public to get in touch.</p><p>PHP was used to handle contact form submissions by forwarding the messages to the business onwner's email address.</p>",
+	'./img/diamond-berry.png',
+	'http://diamondberry.co.zw',
+	'https://github.com/iamndlovu/diamond-berry',
+	['html5', 'js', 'css3', 'php']
+);
+
+const tsd = new Project(
+	'Trauma Series Detector',
+	'Machine learning app to detect fractures and dislocations in x-ray images',
+	'<p>The development of the application was broken down into three stages: data collection, model training, web application design.</p><h4>Model Building and Training</h4><p>Tensorflow[2] was used to create a dataset for training images from collected data. The dataset was then divided into the training dataset, validation dataset and test dataset in the ratio 8:1:1 i.e. 80% of the dataset was used for training the model, 10% was used for validation, and the other 10% was used for testing the accuracy of the model.</p><p>Data Augmentation[3] was applied to boost the accuracy of our model. Data augmentation techniques applied were random horizontal flip, vertical flip and rotation of the items in the training dataset.<p>A convolutional neural network (CNN), which is popular for image classification tasks, was used for building the model. Keras[4] was used to implement the CNN. The model was saved in a file for use with the web application to be developed.</p><h4>Web Application Development</h4><p><b>Tools and Frameworks used</b>:<br /><ul><li>Fast API - Python framework for easy creation of server applications</li><li>Tensorflow - used for loading the trained model in the server</li><li>React.js - a frontend JavaScript framework to build the user interface</li><li>Material UI - a frontend library for styled React components</li><li>Axios - JavaScript package for making requests to the server</li></ul></p>',
+	'./img/tsd.png',
+	'#',
+	'https://github.com/iamndlovu/trauma_series_detector',
+	['microchip-ai', 'python', 'react', 'css3']
 );
 
 export let projects = [];
 
 projects.push(blog);
+projects.push(db);
+projects.push(tsd);
 projects.push(quiz);
 projects.push(todoApp);
 projects.push(surveyLP);
