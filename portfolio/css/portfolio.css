@@ -128,9 +128,25 @@ main {
 }
 
 .project-more-description {
-	font-size: 1.17rem;
+	font-size: 1.02rem;
 	line-height: 1.6;
 	margin-bottom: 2.1rem;
+}
+
+.project-more-description p {
+	margin-bottom: 1.4rem;
+}
+
+.project-more-description h4 {
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin: .4rem 0;
+}
+
+.project-more-description ul li {
+	margin-left: 1.4rem;
+	padding-left: 0.45rem;
+	font-size: 1rem;
 }
 
 .project-more-description .languages {
@@ -161,6 +177,22 @@ main {
 
 .languages .language.fa-react {
 	color: #61dbfb;
+}
+
+.languages .language.fa-sass {
+	color: #cc6699;
+}
+
+.languages .language.fa-python {
+	color: /*#4B8BBE #FFE873*/ #306998/* #FFD43B #646464*/;
+}
+
+.languages .language.fa-node {
+	color: #3C873A;
+}
+
+.languages .language.fa-php {
+	color: #474A8A/*, #787CB5*/;
 }
 
 .project-more-cta {
