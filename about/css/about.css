@@ -1,177 +1,199 @@
 :root {
-	--intro-height: 27rem;
+  --intro-height: 27rem;
 }
 
 /*intro*/
 .intro {
-	display: flex;
-	flex-direction: row-reverse;
-	padding: 0 var(--left-padding);
-	margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 var(--left-padding);
+  margin-bottom: 3rem;
 }
 
 .intro div {
-	justify-content: flex-end;
-	height: var(--intro-height);
+  justify-content: flex-end;
+  height: var(--intro-height);
 }
 
 .potrait {
-	flex: 1;
-	align-items: center;
+  flex: 1;
+  align-items: center;
 }
 
 .potrait img {
-	height: var(--intro-height);
-	width: calc(33 * var(--intro-height) / 35);
+  height: var(--intro-height);
+  width: calc(33 * var(--intro-height) / 35);
 }
 
 .intro-text {
-	flex: 1;
+  flex: 1;
 }
 
 .page-heading {
-	text-transform: capitalize;
-	font-weight: 400;
-	font-size: 3rem;
-	margin-bottom: 3rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .bio {
-	justify-content: space-between;
-	color: #333;
-	font-weight: 320;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
+  justify-content: space-between;
+  color: #333;
+  font-weight: 320;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .lead {
-	font-weight: 350;
-	color: #444;
-	font-size: 1.4rem;
-	line-height: 1.75rem;
-	margin-bottom: 1.5rem;
+  font-weight: 350;
+  color: #444;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro .social {
-	color: #000;
-	margin-top: 1rem;
+  color: #000;
+  margin-top: 1rem;
 }
 
 .intro .social-links {
-	justify-content: space-between;
-	padding: 7px 0;
-	width: 100%;
+  justify-content: space-between;
+  padding: 7px 0;
+  width: 100%;
 }
 
 .intro .social .social-link {
-	margin: 0;
+  margin: 0;
 }
 
 .intro .social .social-link a:hover {
-	color: var(--primary);
+  color: var(--primary);
 }
 
 /* front end web developer? */
 .abt-front {
-	margin-top: 2rem;
-	padding: var(--left-padding);
-	display: flex;
-	flex-direction: row-reverse;
-	background: #f0f0f0;
-	color: black;
+  margin-top: 2rem;
+  padding: var(--left-padding);
+  display: flex;
+  flex-direction: row-reverse;
+  background: #f0f0f0;
+  color: black;
 }
 
 .abt-front > div {
-	flex: 1;
+  flex: 1;
 }
 
 .left {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .front-heading {
-	text-transform: capitalize;
-	color: #333;
-	font-weight: 350;
-	font-size: 2rem;
-	line-height: 2.5rem;
-	margin-bottom: 1.23rem;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 350;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.23rem;
 }
 
 .front-text {
-	color: #333;
-	font-weight: 320;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
+  color: #333;
+  font-weight: 320;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* CTA */
 .cta {
-	background: #f0f0f0;
-	margin-top: 3rem;
-	width: 100%;
+  background: #f0f0f0;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .cta-btn {
-	text-transform: capitalize;
-	color: white;
-	background: var(--primary);
-	border: 3px solid transparent;
-	border-radius: 5px;
-	font-weight: 500;
-	font-size: 1.5rem;
-	padding: 1rem;
-	box-shadow: 3px 3px 6px #333;
-	transition: all 0.5s ease-out;
+  text-transform: capitalize;
+  color: white;
+  background: var(--primary);
+  border: 3px solid transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+  box-shadow: 3px 3px 6px #333;
+  transition: all 0.5s ease-out;
 }
 
 .cta-btn:hover {
-	box-shadow: none;
+  box-shadow: none;
+}
+
+/*bio*/
+.more-about {
+  display: flex;
+  margin: 3rem 0;
+  padding: 0 var(--left-padding);
+}
+
+.more-about > div {
+  flex: 1;
+}
+
+.more-about p {
+  color: #333;
+  font-weight: 320;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.more-about p a {
+  color: var(--primary);
 }
 
 /* fun facts */
 .fun-facts {
-	display: flex;
-	margin: 3rem 0;
-	padding: 0 var(--left-padding);
-	min-height: 30rem;
+  background: #f0f0f0;
+  display: flex;
+  padding: 0 var(--left-padding);
+  min-height: 30rem;
 }
 
 .fun-facts > div {
-	flex: 1;
+  flex: 1;
 }
 
 .facts-heading {
-	text-transform: capitalize;
-	color: #333;
-	font-weight: 400;
-	font-size: 2rem;
-	line-height: 2.5rem;
-	width: 100%;
-	margin-bottom: 1.23rem;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1.23rem;
 }
 
 .facts {
-	list-style: none;
+  list-style: none;
 }
 
 .fact {
-	color: #333;
-	font-weight: normal;
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
+  color: #333;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .facts-img {
-	transform: rotate(27deg) translate(10px, 0);
+  transform: rotate(27deg) translate(10px, 0);
 }
 
 .facts-img img {
-	width: 100%;
+  width: 100%;
 }
 
 .fact a {
-	text-decoration: underline;
-	font-weight: 400;
+  text-decoration: underline;
+  font-weight: 400;
 }
