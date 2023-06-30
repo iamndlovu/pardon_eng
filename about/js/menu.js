@@ -1,3 +1,5 @@
+document.getElementById('footer_year').textContent = new Date().getFullYear();
+
 //select DOM elements
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu-nav');
