@@ -1,6 +1,14 @@
-export class Project
-{
-  constructor(title, intro, description, hash, live, github, languages) {
+export class Project {
+  constructor(
+    title,
+    intro,
+    description,
+    hash,
+    live,
+    github,
+    languages,
+    column
+  ) {
     this.title = title;
     this.intro = intro;
     this.description = description;
@@ -8,6 +16,7 @@ export class Project
     this.live = live;
     this.github = github;
     this.languages = languages;
+    this.column = column;
   }
 
   get getTitle() {
@@ -38,6 +47,10 @@ export class Project
     return this.languages;
   }
 
+  get getColumn() {
+    return this.column;
+  }
+
   //display project preview card
   showCard(parent) {
     const card = this.buildCard();
@@ -46,42 +59,46 @@ export class Project
 
   //show more project details
   showMore(project) {
-    const hiddenItems = [document.querySelector('.menu-btn'), document.querySelector('section.projects'), document.querySelector('.intro')];
+    const hiddenItems = [
+      document.querySelector(".menu-btn"),
+      document.querySelector("section.projects"),
+      document.querySelector(".intro"),
+    ];
     const moreDetails = project.buildMore(hiddenItems);
-    project.attach(document.querySelector('main'), moreDetails)
+    project.attach(document.querySelector("main"), moreDetails);
 
-    hiddenItems.forEach(item => {
-      item.classList.add('hidden-items');
+    hiddenItems.forEach((item) => {
+      item.classList.add("hidden-items");
     });
-    moreDetails.classList.remove('hidden-items');
+    moreDetails.classList.remove("hidden-items");
   }
 
   // build project preview card
   buildCard() {
-    const container = document.createElement('div');
-    const projectCard = document.createElement('div');
-    projectCard.className = 'project';
+    const container = document.createElement("div");
+    const projectCard = document.createElement("div");
+    projectCard.className = "project";
     projectCard.name = this.getTitle;
 
-    const thumbnail = document.createElement('img');
-    thumbnail.className = 'thumbnail';
+    const thumbnail = document.createElement("img");
+    thumbnail.className = "thumbnail";
     thumbnail.src = this.getHash;
     thumbnail.alt = `${this.getTitle} app thumbnail`;
 
-    const projectPreview = document.createElement('div');
-    projectPreview.className = 'project-preview';
+    const projectPreview = document.createElement("div");
+    projectPreview.className = "project-preview";
 
-    const projectTitle = document.createElement('h6');
-    projectTitle.className = 'project-title';
+    const projectTitle = document.createElement("h6");
+    projectTitle.className = "project-title";
     projectTitle.textContent = this.getTitle;
 
-    const projectIntro = document.createElement('p');
-    projectIntro.className = 'project-intro';
+    const projectIntro = document.createElement("p");
+    projectIntro.className = "project-intro";
     projectIntro.textContent = this.getIntro;
 
-    const moreButton = document.createElement('a');
-    moreButton.textContent = 'Read more'
-    moreButton.addEventListener('click', () => this.showMore(this));
+    const moreButton = document.createElement("a");
+    moreButton.textContent = "Read more";
+    moreButton.addEventListener("click", () => this.showMore(this));
 
     projectPreview.appendChild(projectTitle);
     projectPreview.appendChild(projectIntro);
@@ -104,64 +121,66 @@ export class Project
 
   // build elements with more details about project
   buildMore(hiddenItems) {
-    const projectMore = document.createElement('article');
-    projectMore.className = 'project-more hidden-items';
+    const projectMore = document.createElement("article");
+    projectMore.className = "project-more hidden-items";
+    this.column && projectMore.classList.add("column");
 
-    const closeButton = document.createElement('div');
-    closeButton.className = 'close-btn';
-    closeButton.innerHTML = 'x';
-    closeButton.addEventListener('click', () => this.hideMore(hiddenItems));
+    const closeButton = document.createElement("div");
+    closeButton.className = "close-btn";
+    closeButton.innerHTML = "x";
+    closeButton.addEventListener("click", () => this.hideMore(hiddenItems));
 
-    const moreContainer = document.createElement('section');
-    moreContainer.className = 'more-container';
+    const moreContainer = document.createElement("section");
+    moreContainer.className = "more-container";
 
-    const projectImageContainer = document.createElement('div');
-    projectImageContainer.className = 'project-more-image more-right';
+    const projectImageContainer = document.createElement("div");
+    projectImageContainer.className = "project-more-image more-right";
 
-    const projectImage = document.createElement('img');
+    const projectImage = document.createElement("img");
     projectImage.src = this.getHash;
     projectImage.alt = `${this.getTitle} project image`;
 
-    const left = document.createElement('div');
-    left.className = 'more-left';
+    const left = document.createElement("div");
+    left.className = "more-left";
 
-    const projectTitle = document.createElement('h1');
-    projectTitle.className = 'project-more-title';
+    const projectTitle = document.createElement("h1");
+    projectTitle.className = "project-more-title";
     projectTitle.textContent = this.getTitle;
-    
-    const projectDescription = document.createElement('div');
-    projectDescription.className = 'project-more-description';
+
+    const projectDescription = document.createElement("div");
+    projectDescription.className = "project-more-description";
     projectDescription.innerHTML = this.getDescription;
 
-    const projectCTA = document.createElement('section');
-    projectCTA.className = 'project-more-cta';
+    const projectCTA = document.createElement("section");
+    projectCTA.className = "project-more-cta";
 
-    const liveLink = document.createElement('a');
-    liveLink.target = '_blank';
+    const liveLink = document.createElement("a");
+    liveLink.target = "_blank";
     liveLink.href = this.liveLink;
 
-    const liveText = document.createTextNode('live');
+    const liveText = document.createTextNode("live");
 
-    const liveIcon = document.createElement('i');
-    liveIcon.className = 'fas fa-eye';
+    const liveIcon = document.createElement("i");
+    liveIcon.className = "fas fa-eye";
 
-    const githubLink = document.createElement('a');
-    githubLink.target = '_blank';
+    const githubLink = document.createElement("a");
+    githubLink.target = "_blank";
     githubLink.href = this.githubLink;
 
-    const githubText = document.createTextNode('Github');
+    const githubText = document.createTextNode("Github");
 
-    const githubIcon = document.createElement('i');
-    githubIcon.className = 'fab fa-github';
+    const githubIcon = document.createElement("i");
+    githubIcon.className = "fab fa-github";
 
-    const languagesContainer = document.createElement('div');
-    languagesContainer.className = 'languages';
-    this.getLanguages.forEach(language => {
-      const languageCont = document.createElement('i');
+    const languagesContainer = document.createElement("div");
+    languagesContainer.className = "languages";
+    this.getLanguages.forEach((language) => {
+      const languageCont = document.createElement("i");
       languageCont.className = `language fab fa-${language} fa-2x`;
       languagesContainer.appendChild(languageCont);
     });
 
+    this.column && projectImageContainer.appendChild(projectTitle);
     projectImageContainer.appendChild(projectImage);
     githubLink.appendChild(githubIcon);
     githubLink.appendChild(githubText);
@@ -170,7 +189,7 @@ export class Project
     projectCTA.appendChild(liveLink);
     projectCTA.appendChild(githubLink);
     projectDescription.appendChild(languagesContainer);
-    left.appendChild(projectTitle);
+    !this.column && left.appendChild(projectTitle);
     left.appendChild(projectDescription);
     left.appendChild(projectCTA);
     moreContainer.appendChild(left);
@@ -182,14 +201,16 @@ export class Project
   }
 
   hideMore(toBeShown) {
-    const moreDetails = document.querySelector('.project-more');
+    const moreDetails = document.querySelector(".project-more");
 
-    toBeShown.forEach(item => {
-      item.classList.remove('hidden-items')
+    toBeShown.forEach((item) => {
+      item.classList.remove("hidden-items");
     });
 
-    moreDetails.classList.add('hidden-items');
+    moreDetails.classList.add("hidden-items");
 
-    setTimeout(() => {this.remove(document.querySelector('main'), moreDetails)}, 1000);
+    setTimeout(() => {
+      this.remove(document.querySelector("main"), moreDetails);
+    }, 1000);
   }
-};
+}

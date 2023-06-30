@@ -1,82 +1,64 @@
-import { Project } from './Project.js'; // Project class
+import { Project } from "./Project.js"; // Project class
 
 //projects
-const quiz = new Project(
-	'Hogwart Trivia',
-	"A quiz app based on J.K. Rowling's Harry Potter Series.",
-	'<p>A quiz app built using React.js.</p><p>The high score is stored in local storage with all the other stats stored in the top level component state. When the quiz is completed a new component showing how the player perfomed and a restart button is rendered</p>',
-	'./img/trivia-mobile-black.png',
-	'https://hogwartstrivia.netlify.app/',
-	'https://github.com/iamndlovu/Hogwarts_Trivia',
-	['css3', 'js', 'react']
+export const db = new Project(
+  "Diamond Berry",
+  "Business development company static website",
+  "<p>Basic company website built using only HTML, CSS and JavaScript. The purpose of the site is to showcase the services provided by the company and provide a way for the public to get in touch.</p><p>PHP was used to handle contact form submissions by forwarding the messages to the business onwner's email address.</p>",
+  "./img/diamond-berry.png",
+  "http://diamondberry.co.zw",
+  "https://github.com/iamndlovu/diamond-berry",
+  ["html5", "js", "css3", "php"]
 );
 
-const todoApp = new Project(
-	'Todo App',
-	'Web based app to store tasks to be completed.',
-	'Todo App is a web based single page application that stores tasks a user needs to remember to complete. The app has two sections: Home and MITs(Most Important Tasks). Todos in the MITs section are encrypted using the <a href="https://github.com/iamndlovu/encryptah">encryptah</a> functions i wrote so no one else can read them. To display MITs in their original form, one has to simply press the copyright text in the app footer.',
-	'./img/todo-resize.png',
-	'https://pardon-todo.netlify.app/',
-	'https://github.com/iamndlovu/Todo-list',
-	['html5', 'css3', 'js']
+export const tsd = new Project(
+  "Trauma Series Detector",
+  "Machine learning app to detect fractures and dislocations in x-ray images",
+  "<p>The development of the application was broken down into three stages: data collection, model training, web application design.</p><h4>Model Building and Training</h4><p>Tensorflow[2] was used to create a dataset for training images from collected data. The dataset was then divided into the training dataset, validation dataset and test dataset in the ratio 8:1:1 i.e. 80% of the dataset was used for training the model, 10% was used for validation, and the other 10% was used for testing the accuracy of the model.</p><p>Data Augmentation[3] was applied to boost the accuracy of our model. Data augmentation techniques applied were random horizontal flip, vertical flip and rotation of the items in the training dataset.<p>A convolutional neural network (CNN), which is popular for image classification tasks, was used for building the model. Keras[4] was used to implement the CNN. The model was saved in a file for use with the web application to be developed.</p><h4>Web Application Development</h4><p><b>Tools and Frameworks used</b>:<br /><ul><li>Fast API - Python framework for easy creation of server applications</li><li>Tensorflow - used for loading the trained model in the server</li><li>React.js - a frontend JavaScript framework to build the user interface</li><li>Material UI - a frontend library for styled React components</li><li>Axios - JavaScript package for making requests to the server</li></ul></p>",
+  "./img/tsd.png",
+  "#",
+  "https://github.com/iamndlovu/trauma_series_detector",
+  ["microchip-ai", "python", "react", "css3"]
 );
 
-const surveyLP = new Project(
-	'PAID SURVEYS',
-	'Landing page of online paid surveys listings.',
-	'PAID SURVEYS is a landing page for listings of paid surveys users can complete to earn rewards online.',
-	'./img/surveys-resize.png',
-	'https://survey-lp.netlify.app/',
-	'https://github.com/iamndlovu/survey-lp',
-	['html5', 'css3', 'js']
+export const sbm4 = new Project(
+  "Mimosa Plant Optimization Project",
+  "Designing and commisioning a 4.6MW ball mill and floatation cells control system",
+  '<p>I had the opportunity to be part of the design of the Supervisory Control And Data Acquisition (SCADA) control system for the 4.6 MW ball mill and its surrounding equipment. I worked alongside a team of experts to ensure that all safety and protection measures were in place while optimizing the performance of the plant. During this project, we also designed the floatation circuit, which required extensive testing and calibration during Factory Acceptance Tests (FATs) using Rockwell Automation\'s PLC emulator.</p><p>Throughout the commissioning phase of the project, I was heavily involved in the various testing and troubleshooting activities. This included I/O testing and instrument calibration, drive bumping, loop checking, interlock testing, and PID tuning. I also had the opportunity to test the floatation circuit and troubleshoot issues at the 11kV motor control substation. Additionally, I participated in the testing of the 4.6 MW ball mill, ensuring that it was fully operational and met all project requirements.</p><p>Overall, the Mimosa concentrator plant optimization project was a challenging and rewarding experience that allowed me to showcase my skills in designing and implementing complex control systems. Working alongside a dedicated team of experts in their respective disciplines, I got the opportunity to learn new methodoligies from some of the best engineers in the continent. We were able to deliver a high-quality solution that fully met the project requirements and achieved the desired outcome. I am thrilled to have been part of this project and look forward to applying what I have learned to future endeavors.</p><p><a href="https://photos.app.goo.gl/oahdN7E9zccLTFr86" target="_blank" style="color: #0083ff" onMouseOver="this.style.textDecoration=\'underline\'" onMouseOut="this.style.textDecoration=\'none\'">View project gallery</a></p>',
+  "./img/floatation.jpeg",
+  "https://photos.app.goo.gl/oahdN7E9zccLTFr86",
+  "#",
+  [],
+  true
 );
 
-const portfolio = new Project(
-	'Pardon Ndlovu',
-	'My web developer portfolio website',
-	"<p>Well, it's the website you are currently viewing! I designed two versions of the logo, yellow and aliceblue, using <a href=\"https://www.gimp.org\">GIMP</a>. The default logo is the aliceblue version which is replaced by the yellow version on hover. The only downside  to this is that it may take a few seconds for the yellow version to load on hover, leaving the section blank for those few seconds.</p><p>In order to practice Object Oriented Programming, a class called Project was created to be a template for all projects. The class holds all event listeners and other methods of each project object. When the Portfolio page first loads it displays the project cards by calling a method showCard of the Project class. When 'Read more' is clicked on, another method (showMore) is called to display more details about the project in question.</p>",
-	'./img/portfolio-resize.png',
-	'https://bit.ly/pndlovu',
-	'https://github.com/iamndlovu/Pardon_Ndlovu',
-	['html5', 'css3', 'js']
+export const hoist = new Project(
+  "How Mine hoist maintanence",
+  "Designing and commisioning a 4.6MW ball mill and floatation cells control system",
+  "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam officiis, culpa, sapiente doloribus nam velit eos odit esse architecto, delectus molestias perspiciatis hic asperiores expedita quasi sint nemo itaque aliquam quod. Aspernatur, asperiores. Odit quasi debitis non ducimus placeat fugit voluptates accusantium optio maxime ratione saepe voluptatem perspiciatis, maiores in vel amet alias illum iusto omnis odio quaerat error cumque magni.</p><p>In, tenetur error corporis iste accusamus nobis, odio earum similique, reiciendis sint exercitationem maiores accusantium adipisci dignissimos tempore iure explicabo mollitia! Praesentium eos facere nihil numquam excepturi reprehenderit repellendus sit? Voluptatum, illo quibusdam, quo sequi possimus sunt laborum tempore dignissimos, tempora earum eius quos beatae quisquam ipsa dolorem nam ea mollitia illum fugit quidem hic! Debitis, quaerat quae?</p>",
+  "./img/hoist.jpg",
+  "https://photos.app.goo.gl/8Rxgng3vhgnUL1eH6",
+  "#",
+  true
 );
 
-const blog = new Project(
-	'Company Website',
-	'Responsive company website with blog',
-	'<p>This is a mock website for a company build with React.js</p><p>The development of this project followed the Agile software development life cycle. The gesign was done using GIMP before the app could be implemented using React.</p><p>Sass, a CSS pre-processor, was used to style the entire app. To avoid styles for different components overlapping, CSS modules were employed.</p>',
-	'./img/blog.png',
-	'https://admiring-villani-f2a854.netlify.app/',
-	'https://github.com/iamndlovu/excomag_client',
-	['react', 'js', 'sass', 'css3']
-);
-
-const db = new Project(
-	'Diamond Berry',
-	'Business development company static website',
-	"<p>Basic company website built using only HTML, CSS and JavaScript. The purpose of the site is to showcase the services provided by the company and provide a way for the public to get in touch.</p><p>PHP was used to handle contact form submissions by forwarding the messages to the business onwner's email address.</p>",
-	'./img/diamond-berry.png',
-	'http://diamondberry.co.zw',
-	'https://github.com/iamndlovu/diamond-berry',
-	['html5', 'js', 'css3', 'php']
-);
-
-const tsd = new Project(
-	'Trauma Series Detector',
-	'Machine learning app to detect fractures and dislocations in x-ray images',
-	'<p>The development of the application was broken down into three stages: data collection, model training, web application design.</p><h4>Model Building and Training</h4><p>Tensorflow[2] was used to create a dataset for training images from collected data. The dataset was then divided into the training dataset, validation dataset and test dataset in the ratio 8:1:1 i.e. 80% of the dataset was used for training the model, 10% was used for validation, and the other 10% was used for testing the accuracy of the model.</p><p>Data Augmentation[3] was applied to boost the accuracy of our model. Data augmentation techniques applied were random horizontal flip, vertical flip and rotation of the items in the training dataset.<p>A convolutional neural network (CNN), which is popular for image classification tasks, was used for building the model. Keras[4] was used to implement the CNN. The model was saved in a file for use with the web application to be developed.</p><h4>Web Application Development</h4><p><b>Tools and Frameworks used</b>:<br /><ul><li>Fast API - Python framework for easy creation of server applications</li><li>Tensorflow - used for loading the trained model in the server</li><li>React.js - a frontend JavaScript framework to build the user interface</li><li>Material UI - a frontend library for styled React components</li><li>Axios - JavaScript package for making requests to the server</li></ul></p>',
-	'./img/tsd.png',
-	'#',
-	'https://github.com/iamndlovu/trauma_series_detector',
-	['microchip-ai', 'python', 'react', 'css3']
+export const server = new Project(
+  "Mimosa Stratus Server",
+  "Designing and commisioning a 4.6MW ball mill and floatation cells control system",
+  "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam officiis, culpa, sapiente doloribus nam velit eos odit esse architecto, delectus molestias perspiciatis hic asperiores expedita quasi sint nemo itaque aliquam quod. Aspernatur, asperiores. Odit quasi debitis non ducimus placeat fugit voluptates accusantium optio maxime ratione saepe voluptatem perspiciatis, maiores in vel amet alias illum iusto omnis odio quaerat error cumque magni.</p><p>In, tenetur error corporis iste accusamus nobis, odio earum similique, reiciendis sint exercitationem maiores accusantium adipisci dignissimos tempore iure explicabo mollitia! Praesentium eos facere nihil numquam excepturi reprehenderit repellendus sit? Voluptatum, illo quibusdam, quo sequi possimus sunt laborum tempore dignissimos, tempora earum eius quos beatae quisquam ipsa dolorem nam ea mollitia illum fugit quidem hic! Debitis, quaerat quae?</p>",
+  "./img/tsd.png",
+  "#",
+  "#",
+  [],
+  true
 );
 
 export let projects = [];
 
-projects.push(blog);
+projects.push(sbm4);
+// projects.push(server);
+// projects.push(hoist);
 projects.push(db);
 projects.push(tsd);
-projects.push(quiz);
-projects.push(todoApp);
-projects.push(surveyLP);
-projects.push(portfolio);
+
+export default projects;
