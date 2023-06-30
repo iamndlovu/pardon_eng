@@ -17,12 +17,18 @@
 
 .potrait {
   flex: 1;
+  height: var(--intro-height);
+  padding: 0.5rem;
+  overflow: hidden;
   align-items: center;
 }
 
 .potrait img {
-  height: var(--intro-height);
-  width: calc(33 * var(--intro-height) / 35);
+  /* height: var(--intro-height);
+  width: calc(33 * var(--intro-height) / 35); */
+  height: 100%;
+  border-radius: 7px;
+  opacity: 0.8;
 }
 
 .intro-text {
@@ -81,8 +87,12 @@
   color: black;
 }
 
-.abt-front > div {
+.abt-front > .right {
   flex: 1;
+}
+
+.abt-front > .left {
+  margin-right: var(--left-padding);
 }
 
 .left {
@@ -104,6 +114,10 @@
   font-weight: 320;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.front-img {
+  max-width: 500px;
 }
 
 /* CTA */
@@ -131,10 +145,16 @@
 }
 
 /*bio*/
+.more-about-container {
+  background: url("./../../img/pinwheels-6535595_1920.jpg") center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .more-about {
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
-  margin: 3rem 0;
-  padding: 0 var(--left-padding);
+  padding: 3rem var(--left-padding);
 }
 
 .more-about > div {
@@ -150,6 +170,23 @@
 
 .more-about p a {
   color: var(--primary);
+}
+
+.more-about a.cert-cta {
+  display: block;
+  width: fit-content;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.8rem 1.4rem;
+  margin: 1rem auto;
+  color: #333;
+  transition: all 0.5s ease-out;
+}
+
+.more-about a.cert-cta:hover {
+  color: var(--secondary);
+  background: #333;
+  border: 1px solid var(--secondary);
 }
 
 /* fun facts */
